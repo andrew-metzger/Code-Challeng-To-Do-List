@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do List App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="todo-app">
+                <h2>Add ToDo's</h2>
+                <div class="add-input-name">
+                    <form id="new-task-form">
+                        <input 
+                            type="text"
+                            id="input-name"
+                            placeholder="New Todo" />
+
+                        <select id = "input-users" >
+                            <option value="user1">User1</option>
+                            <option value="user2">User2</option>
+                        </select>
+
+                        <select id = "input-status" >
+                            <option value="Open">Open</option>
+                            <option value="Closed">Closed</option>
+                        </select>
+                        <button type="submit" value="submit">Finish</button>
+                        <!--Call function ? onclick="addTask()""-->
+                    </form>
+
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

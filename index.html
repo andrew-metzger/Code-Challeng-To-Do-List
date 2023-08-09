@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>To-Do List App</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>ToDo's</h2>
+
+            <!--Need styling for active link to be highlighted-->
+            <button class="tabopen">Open</button>
+            <button class="tabclosed" onclick="window.location.href='closed.html'">Closed</button>
+
+            <div id="Open" class="tabcontent">
+                <!-- Display Open tasks -->
+            </div>
+
+            <div class="topnav">
+                <input type="text" id="search-input" placeholder="Search To-Do's">
+                <button id =search-button>Search</button>
+            </div>
+           
+            <ul  id = "list-container" style="height: 100%; overflow: auto">
+                <li>
+                    <span>Todo item</span>
+                    <label>User</label>
+                </li>
+            </ul>
+
+            <div class="fab-container" id="fab-container">
+                <button data-icon="plus" class="fab-icon" onclick="window.location.href='add.html'"></button>
+            </div>
+               
+                
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
